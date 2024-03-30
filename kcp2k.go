@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-// 读取一个kcp的完整包
+// ReadPacket 读取一个kcp的完整包
 func (s *UDPSession) ReadPacket() (packet []byte, err error) {
 	var timeout *time.Timer
 	// deadline for current reading operation
